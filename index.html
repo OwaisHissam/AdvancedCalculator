@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	  <div class="calculator card">
+
+    <input type="text" id="result" class="calculator-screen z-depth-1" value="" disabled />
+
+    <div class="calculator-keys">
+
+      <button type="button" class="operator btn btn-primary" value="+" onclick="getNumber('+')">+</button>
+      <button type="button" class="operator btn btn-success" value="-" onclick="getNumber('-')">-</button>
+      <button type="button" class="operator btn btn-warning" value="*" onclick="getNumber('*')">&times;</button>
+      <button type="button" class="operator btn btn-info" value="/" onclick="getNumber('/')">&divide;</button>
+
+      <button type="button" value="7" class="btn btn-light waves-effect" onclick="getNumber('7')">7</button>
+      <button type="button" value="8" class="btn btn-light waves-effect" onclick="getNumber('8')">8</button>
+      <button type="button" value="9" class="btn btn-light waves-effect" onclick="getNumber('9')">9</button>
+
+
+      <button type="button" value="4" class="btn btn-light waves-effect" onclick="getNumber('4')">4</button>
+      <button type="button" value="5" class="btn btn-light waves-effect" onclick="getNumber('5')">5</button>
+      <button type="button" value="6" class="btn btn-light waves-effect" onclick="getNumber('6')">6</button>
+
+
+      <button type="button" value="1" class="btn btn-light waves-effect" onclick="getNumber('1')">1</button>
+      <button type="button" value="2" class="btn btn-light waves-effect" onclick="getNumber('2')">2</button>
+      <button type="button" value="3" class="btn btn-light waves-effect" onclick="getNumber('3')">3</button>
+
+
+      <button type="button" value="0" class="btn btn-light waves-effect" onclick="getNumber('0')">0</button>
+      <button type="button" class="decimal function btn btn-secondary" value="." onclick="getNumber('.')">.</button>
+      <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="clearResult('')">C</button>
+      <button type="button" class="decimal function btn btn-secondary" onclick="back('')">CE</button>
+      <button type="button" class="equal-sign operator btn btn-default" value="=" onclick="getResult()">=</button>
+
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
